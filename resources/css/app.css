@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #060606;
+    --card-bg: #313131;
+}
+
+body {
+    background-color: var(--background);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+a:visited {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+nav a {
+
+    margin: 0 5px;
+}
+
+main {
+    max-width: 1000px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.search-section {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-section form {
+    margin: 40px;
+    width: 100%;
+    max-width: 420px;
+}
+.search-section form input {
+    width: 100%;
+    max-width: 420px;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    margin: 0 auto;
+    color: #fff;
+}
+/**/
+.top-jobs--section {
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    width: 100%;
+}
+.card-header h3 {
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+.card-header {
+
+}
+
+.header-span {
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px
+}
+
+.top-jobs-card {
+    background-color: var(--card-bg);
+    max-width: 420px;
+    min-width: fit-content;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.top-jobs-card div:first-of-type {
+
+}
+
+.top-jobs-card div:nth-of-type(2) {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.top-jobs-card div:nth-of-type(3)   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.card-tags {
+    background-color: #444444;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.top-cards-grid {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.recent-cards-grid {
+    margin: 0 auto;
+}
+
+.top-jobs-card-wide {
+    width: 100%;
+    max-width: unset;
+    margin: 20px auto;
+}
