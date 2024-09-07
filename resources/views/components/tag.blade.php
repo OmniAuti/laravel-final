@@ -1,1 +1,3 @@
-<a class="card-tags" href="">{{$slot}}</a>
+@props(['tag'])
+
+<a class="card-tags" href="/tags/{{strtolower($tag->name)}}">{{$tag->name}}</a>

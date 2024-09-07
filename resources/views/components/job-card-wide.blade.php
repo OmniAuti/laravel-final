@@ -1,16 +1,18 @@
+@props(['job'])
+
 <div class="top-jobs-card top-jobs-card-wide">
     <div>
-        <a href="">Laracasts</a>
+        <a href="">{{$job->employer->name}}</a>
     </div>
     <div>
-        <h3>Video Producer</h3>
-        <p>Full Time - From $60,000</p>
+        <h3>{{$job->title}}</h3>
+        <p>{{$job->schedule}} - From {{$job->salary}}</p>
     </div>
     <div>
         <div>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
+            @foreach($job->tags as $tag)
+                <x-tag :tag="$tag" />
+            @endforeach
         </div>
         <x-employer-logo></x-employer-logo>
     </div>
